@@ -13,3 +13,11 @@
 .error {
   background-color: red;
 }
+
+.alert {
+  background-color: orange;
+}
+
+.notice {
+  background-color: lightblue;
+}
