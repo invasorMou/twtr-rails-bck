@@ -1,0 +1,8 @@
+.log-container,
+.sgn-container {
+  width: 50%;
+  background-color: white;
+  padding: 10px;
+  text-align: center;
+  margin: auto;
+}

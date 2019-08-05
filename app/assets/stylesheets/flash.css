@@ -1,5 +1,6 @@
 .flash-msg {
   position: absolute;
+  right: 0px;
   width: 15%;
   padding: 10px;
   color: white;
@@ -12,4 +13,12 @@
 
 .error {
   background-color: red;
+}
+
+.alert {
+  background-color: orange;
+}
+
+.notice {
+  background-color: lightblue;
 }
