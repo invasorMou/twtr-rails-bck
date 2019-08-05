@@ -1,7 +1,11 @@
 class TweetsController < ApplicationController
-
+skip_before_action :authenticate_user!, only: [:index]
   def index
     @tweets = Tweet.all.order(created_at: :desc)
+  end
+
+  def user_tweets
+    @tweets = current_user.tweets.order(created_at: :desc)
   end
 
   def new
@@ -10,6 +14,7 @@ class TweetsController < ApplicationController
 
   def create
     tweet = Tweet.new(tweet_params)
+    tweet.user = current_user
     if tweet.save
       redirect_to tweets_path
     else

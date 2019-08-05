@@ -23,7 +23,7 @@ body {
 
 .twt-container {
   margin: 0 auto;
-  width: 35%;
+  width: 45%;
   border-radius: 5px;
 }
 
@@ -76,6 +76,7 @@ form {
 }
 
 a {
+  color: black;
   text-decoration: none;
 }
 
