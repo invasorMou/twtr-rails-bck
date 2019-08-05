@@ -6,5 +6,4 @@ Rails.application.routes.draw do
       get 'user_tweets'
     end
   end
-
 end
