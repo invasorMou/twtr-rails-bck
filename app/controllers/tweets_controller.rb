@@ -1,10 +1,11 @@
 class TweetsController < ApplicationController
-skip_before_action :authenticate_user!, only: [:index]
+  before_action :authenticate_user!
+  skip_before_action :authenticate_user!, only: [:index]
   def index
     @tweets = Tweet.all.order(created_at: :desc)
   end
 
-  def user_tweets
+  def user
     @tweets = current_user.tweets.order(created_at: :desc)
   end
 
